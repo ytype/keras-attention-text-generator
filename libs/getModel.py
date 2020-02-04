@@ -11,7 +11,7 @@ from tensorflow.keras.utils import plot_model
 INPUT_DIM = 100
 TIME_STEPS = 20
 
-def get_model(x=x):
+def get_model(x):
     #inputs = Input(shape=(TIME_STEPS, INPUT_DIM,))
     inputs = Input(shape=(x.shape[1], x.shape[2]))
     rnn_out = LSTM(32, return_sequences=True)(inputs)
