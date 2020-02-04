@@ -16,7 +16,7 @@ def get_model(x):
     #inputs = Input(shape=(TIME_STEPS, INPUT_DIM,))
     inputs = Input(shape=(x.shape[1], x.shape[2]))
     rnn_out = LSTM(32, return_sequences=True)(inputs)
-    dropout_output = Dropout(rnn_out)
+    dropout_output = Dropout(0.2)(rnn_out)
     attention_output = attention_3d_block(dropout_output)
     output = Dense(y.shape[1], activation='softmax', name='output')(attention_output)
     m = Model(inputs=[inputs], outputs=[output])
