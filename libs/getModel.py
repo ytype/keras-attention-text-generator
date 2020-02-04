@@ -12,7 +12,7 @@ from libs.attention import attention_3d_block
 INPUT_DIM = 100
 TIME_STEPS = 20
 
-def get_model(x):
+def get_model(x,y):
     #inputs = Input(shape=(TIME_STEPS, INPUT_DIM,))
     inputs = Input(shape=(x.shape[1], x.shape[2]))
     rnn_out = LSTM(32, return_sequences=True)(inputs)

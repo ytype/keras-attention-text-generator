@@ -23,7 +23,7 @@ x,y = embedding(data)
 
 n = 300000
 
-m = get_model(x)
+m = get_model(x,y)
 m.compile(optimizer='adam', loss='categorical_crossentropy')
     
 history  = m.fit(x, y, epochs=args.epoch, batch_size=args.batch_size, validation_split=0)
