@@ -28,11 +28,10 @@ m.compile(optimizer='adam', loss='categorical_crossentropy')
     
 history  = m.fit(x, y, epochs=args.epoch, batch_size=args.batch_size, validation_split=0)
 plt.plot(history.history['loss'])
-#plt.plot(history.history['val_loss'])
 plt.title('Model loss')
 plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
-plt.savefig('img/loss.png')
+plt.savefig('/img/loss.png')
 
 generate()
