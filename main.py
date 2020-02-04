@@ -1,7 +1,6 @@
 import argparse
 from libs.processing import processing 
 from libs.embedding import embedding
-from libs.attention import attention_3d_block
 from libs.getModel import get_model
 from libs.generate import generate
 from matplotlib import pyplot as plt
