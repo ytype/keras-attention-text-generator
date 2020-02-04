@@ -32,6 +32,6 @@ plt.title('Model loss')
 plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(['Train', 'Test'], loc='upper left')
-plt.savefig('/img/loss.png')
+plt.savefig('loss.png')
 
 generate()

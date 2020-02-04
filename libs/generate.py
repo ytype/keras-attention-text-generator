@@ -33,4 +33,4 @@ def generate():
     print("attention vector: ",attention_vectors)
     attention_df = pd.DataFrame(attention_vec, columns=['attention (%)'])
     attention_df.plot(kind='bar', figsize=(50, 6), title='Attention Mechanism as a function of input dimensions.')
-    plt.savefig('img/attention.png')
+    plt.savefig('attention.png')
