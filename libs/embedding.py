@@ -23,4 +23,4 @@ def embedding(str):
     x = np.reshape(dataX, (n_patterns, seq_length, 1))
     x = x / float(n_vocab)
     y = np_utils.to_categorical(dataY)
-    return x,y
+    return x,y,chars,n_vocab,dataX,seq_length

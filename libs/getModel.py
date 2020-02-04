@@ -21,5 +21,4 @@ def get_model(x,y):
     output = Dense(y.shape[1], activation='softmax', name='output')(attention_output)
     m = Model(inputs=[inputs], outputs=[output])
     print(m.summary())
-    plot_model(m, to_file='model.png')
     return m
